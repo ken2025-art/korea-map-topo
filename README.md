@@ -26,8 +26,9 @@ TopoJSON object 키: `skorea_provinces_2018_geo` · 시도 17개
 
 - 경계 단순화 8% (mapshaper) → 880KB에서 92KB로 경량화, 시도 형태는 유지
 - `name_short` 라벨 키 추가 (서울/부산/경기/강원/충북…)
-- `name_eng` 세종 표기 수정: `Sejongsi` → `Sejong` (표준 표기)
 - `base_year` 속성 제거 (전 지역 "2018" 동일 → 불필요)
+
+참고: `name_eng`의 세종은 원본 `Sejongsi`를 유지합니다(데이터 매칭 키). 화면 라벨은 `name_short`("세종")를 쓰므로 표시는 깔끔합니다.
 
 ## 출처 및 라이선스
 

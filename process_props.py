@@ -38,9 +38,12 @@ SHORT = {
     "제주특별자치도": "제주",
 }
 
-# 영문 표기 보정 (표준 표기로)
+# 영문 표기 보정
+# 주의: name_eng 는 Power BI 데이터(F1_Registration[City_EN_map] = "Sejongsi")와
+#       매칭되는 키이므로 원본 "Sejongsi" 그대로 둔다 (모델 무수정 매칭).
+#       화면 라벨은 name_short("세종")로 표시되므로 사용자에겐 깔끔하게 보임.
 ENG_FIX = {
-    "Sejongsi": "Sejong",
+    # "Sejongsi": "Sejong",  # 데이터 매칭 위해 보정 비활성화
 }
 
 with open(SRC, "r", encoding="utf-8") as f:
